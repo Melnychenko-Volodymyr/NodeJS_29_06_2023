@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Форма прийому замовлення</title>
+	<link rel="stylesheet" type="text/css" href="./style/form.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.6/axios.js" integrity="sha512-//dh2f858Fr7wqGN0IrKqOwzFRMSNDFepYnq0R0Nau+vpQRaUYwViFi7KVniyCALFPOaaMd1n38d5q0pboHjUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+	<div class="container">
+		<h2>ВВЕДЕННЯ ЗАМОВЛЕННЯ НА ДРУК ФОТОГРАФІЙ  :</h2>
+		<div class="cont2">
+        </div>
+        <div class="cont3">
+            <label>Iм'я: </label>
+            <input type="text" class="inp_name">
+            <br><br><br>
+            <label>Телефон: </label>
+            <input type="text" class="inp_phone">
+            <br><br><br>
+            <label>Розмір фотографії: </label>
+            <select class="select"> 
+                <option value='9 x 13'>9 x 13</option>
+                <option value='10 x 15'>10 x 15</option>
+                <option value='13 x 18'>13 x 18</option>
+                <option value='15 x 21'>15 x 21</option>
+                <option value='21 x 30'>21 x 30</option>           
+            </select>
+            <br><br><br>
+            <label>Кількість: </label>
+            <button class="btn_minus">-</button>
+            <p class="quantity">1</p>
+            <button class="btn_plus">+</button>
+            <br><br><br>
+            <input type="file" accept="image/*" class="input_file" >
+            <br><br><br>
+            <button class="btn_submit">ВІДПРАВКА ЗАМОВЛЕННЯ</button>
+        </div>
+        
+	</div>
+	
+	<script src="/js/form.js"></script>
+	
+</body>		
+</html>
+
